@@ -14,7 +14,7 @@ project_structure = {
 }
 
 # Create the base project directory
-project_name = "project_name"
+project_name = "OpenCV"
 os.makedirs(project_name, exist_ok=True)
 
 # Create folders and files based on the defined structure
@@ -32,7 +32,7 @@ for folder, contents in project_structure.items():
             os.makedirs(item_path, exist_ok=True)
 
 # Create the remaining files at the root level
-root_files = ["README.md", "requirements.txt", "Dockerfile", ".gitignore"]
+root_files = ["README.md", "requirements.txt", "Dockerfile"]
 for file in root_files:
     file_path = os.path.join(project_name, file)
     with open(file_path, "w") as f:
