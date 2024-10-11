@@ -32,7 +32,7 @@ for folder, contents in project_structure.items():
             os.makedirs(item_path, exist_ok=True)
 
 # Create the remaining files at the root level
-root_files = ["README.md", "requirements.txt", "Dockerfile"]
+root_files = ["README.md", "requirements.txt", "requirements_dev.txt","Dockerfile"]
 for file in root_files:
     file_path = os.path.join(project_name, file)
     with open(file_path, "w") as f:
